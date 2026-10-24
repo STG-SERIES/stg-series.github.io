@@ -59,7 +59,7 @@ img {
   position: fixed;
   inset: 0;
   z-index: 0;
-  background: var(--ink) url("../img/bg.jpg") center / cover no-repeat;
+  background: var(--ink) url("../img/Dirt_background_BE1.webp") center / cover no-repeat;
   pointer-events: none;
 }
 
