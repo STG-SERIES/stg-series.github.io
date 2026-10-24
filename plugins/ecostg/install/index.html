@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Install EcoSTG on Paper or Purpur — requirements, download links, and first-run setup.">
+  <title>Install — EcoSTG</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <div class="page">
+    <header class="site-header">
+      <div class="header-row">
+        <a class="brand" href="../">
+          <img class="brand-logo" src="../assets/img/ecostg-logo.png" width="200" height="53" alt="EcoSTG">
+          <span class="brand-tag">STG SERIES · Paper / Purpur</span>
+        </a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="../">Home</a>
+          <a href="../features/">Features</a>
+          <a href="./" aria-current="page">Install</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="shell">
+      <main class="shell-inner">
+        <section class="hero" style="padding-bottom: 0;">
+          <h1>Install</h1>
+          <p class="hero-lead">Grab the jar for your server line, drop it in <code>plugins/</code>, restart once, then tune configs.</p>
+          <div class="cta-row">
+            <a class="btn btn-modrinth" href="https://modrinth.com/plugin/ecostg" rel="noopener noreferrer" target="_blank">Download — Modrinth</a>
+            <a class="btn btn-curseforge" href="https://www.curseforge.com/minecraft/bukkit-plugins/ecostg" rel="noopener noreferrer" target="_blank">Download — CurseForge</a>
+            <a class="btn btn-github" href="https://github.com/stg-series/ecostg" rel="noopener noreferrer" target="_blank">Source — GitHub</a>
+          </div>
+        </section>
+
+        <section class="section" style="margin-top: 1.5rem;">
+          <h2>Requirements</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Server</th>
+                  <th>Java</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Paper or Purpur <strong>1.21.11</strong></td>
+                  <td>21+</td>
+                  <td>Use the 1.21.11 release on Modrinth / CurseForge</td>
+                </tr>
+                <tr>
+                  <td>Paper <strong>26.1</strong></td>
+                  <td>25+</td>
+                  <td>Match jar to 26.1 — not interchangeable with other lines</td>
+                </tr>
+                <tr>
+                  <td>Paper <strong>26.1.2</strong></td>
+                  <td>25+</td>
+                  <td>Dedicated build for 26.1.2</td>
+                </tr>
+                <tr>
+                  <td>Paper <strong>26.2</strong></td>
+                  <td>25+</td>
+                  <td>Dedicated build for 26.2</td>
+                </tr>
+                <tr>
+                  <td>Paper <strong>26.3</strong></td>
+                  <td>25+</td>
+                  <td>Dedicated build for 26.3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">EcoSTG includes its own SQLite economy. You do not need Vault or another economy plugin.</p>
+        </section>
+
+        <section class="section">
+          <h2>Setup in three steps</h2>
+          <ol class="steps">
+            <li>
+              <strong>Download</strong> the EcoSTG jar that matches your Paper/Purpur version from Modrinth or CurseForge.
+            </li>
+            <li>
+              <strong>Install</strong> by placing the jar in your server’s <code>plugins/</code> folder. Start the server once.
+            </li>
+            <li>
+              <strong>Configure</strong> — edit <code>config.yml</code>, <code>worth.yml</code>, and <code>jobs.yml</code> in the plugin data folder, then <strong>restart</strong> (preferred over <code>/reload</code> on Paper).
+            </li>
+          </ol>
+        </section>
+
+        <section class="section">
+          <h2>First run creates</h2>
+          <ul class="pill-list">
+            <li>config.yml</li>
+            <li>worth.yml</li>
+            <li>jobs.yml</li>
+            <li>ecostg.db</li>
+          </ul>
+          <p style="margin-top: 1rem;">Existing configs keep your values when you update; new keys pick up defaults from the latest release.</p>
+        </section>
+
+        <section class="section">
+          <h2>Need help or source?</h2>
+          <p>Open an issue on GitHub or reach STG SERIES through Linktree or email.</p>
+          <div class="cta-row">
+            <a class="btn" href="https://github.com/stg-series/ecostg/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>
+            <a class="btn" href="mailto:info.stgseries@gmail.com">Email STG SERIES</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <a class="footer-stg-link" href="https://linktr.ee/stgseries" target="_blank" rel="noopener noreferrer" aria-label="STG SERIES on Linktree">
+          <img class="footer-stg-logo" src="../assets/img/stg-series.png" width="88" height="88" alt="">
+        </a>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>EcoSTG</h4>
+            <ul>
+              <li><a href="https://modrinth.com/plugin/ecostg" target="_blank" rel="noopener noreferrer">Modrinth</a></li>
+              <li><a href="https://www.curseforge.com/minecraft/bukkit-plugins/ecostg" target="_blank" rel="noopener noreferrer">CurseForge</a></li>
+              <li><a href="https://github.com/stg-series/ecostg" target="_blank" rel="noopener noreferrer">Source (GitHub)</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>STG SERIES</h4>
+            <ul>
+              <li><a href="https://linktr.ee/stgseries" target="_blank" rel="noopener noreferrer">Linktree</a></li>
+              <li><a href="https://github.com/STG-SERIES" target="_blank" rel="noopener noreferrer">GitHub org</a></li>
+              <li><a href="mailto:info.stgseries@gmail.com">info.stgseries@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Site</h4>
+            <ul>
+              <li><a href="../features/">Features</a></li>
+              <li><a href="./">Install</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>EcoSTG — MIT License</span>
+        <span>Not affiliated with Mojang or Microsoft.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
