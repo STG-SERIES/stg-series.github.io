@@ -214,9 +214,12 @@ img {
 }
 
 .hero-logo {
-  width: min(420px, 90%);
+  width: min(320px, 72vw);
+  height: auto;
   margin: 0 auto;
-  filter: drop-shadow(0 0 0 #000) drop-shadow(0 1px 0 #000);
+  border-radius: 50%;
+  border: var(--border);
+  box-shadow: var(--shadow);
 }
 
 .hero h1 {
