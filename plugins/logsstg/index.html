@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LogsSTG — live Paper server console in your browser with a command line. Loopback by default.">
+  <title>LogsSTG — Paper plugin</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <div class="page">
+    <header class="site-header">
+      <div class="header-row">
+        <a class="brand" href="./">
+          <img class="brand-logo" src="assets/img/logsstg-logo.png" width="200" height="53" alt="LogsSTG">
+          <span class="brand-tag">STG SERIES · Paper</span>
+        </a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="./" aria-current="page">Home</a>
+          <a href="features/">Features</a>
+          <a href="install/">Install</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="shell">
+      <main class="shell-inner">
+        <section class="hero">
+          <img class="hero-logo" src="assets/img/logsstg-hero.png" width="320" height="320" alt="LogsSTG">
+          <h1>Your server console. In the browser.</h1>
+          <p class="hero-lead">
+            <strong>LogsSTG</strong> serves a local page with the live Paper console and a command line at the bottom.
+            Scroll the log, run commands (leading <code>/</code> optional), and use arrow keys to recall history — default <code>http://127.0.0.1:8765/</code>.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-curseforge" href="https://www.curseforge.com/minecraft/bukkit-plugins/logsstg" rel="noopener noreferrer" target="_blank">CurseForge</a>
+            <a class="btn btn-github" href="https://github.com/STG-SERIES/LogsSTG" rel="noopener noreferrer" target="_blank">GitHub</a>
+            <a class="btn" href="features/">See features</a>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Why servers pick LogsSTG</h2>
+          <div class="grid-3">
+            <article class="card">
+              <h3>Live tail</h3>
+              <p>New log lines stream to the page as they print. Connect late and still get recent history from config.</p>
+            </article>
+            <article class="card">
+              <h3>Console from the page</h3>
+              <p>The bottom line runs real server commands. Up/down arrows cycle through what you typed before.</p>
+            </article>
+            <article class="card">
+              <h3>Loopback first</h3>
+              <p>Defaults to <code>127.0.0.1</code> so only your machine can reach it — change bind only if you understand the risk.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Supported Paper lines</h2>
+          <p>Download the jar that matches your server from CurseForge or GitHub Releases.</p>
+          <ul class="pill-list">
+            <li>Paper 1.21.11 · Java 21+</li>
+            <li>Paper 26.1 (26.1.1 line) · Java 25+</li>
+            <li>Paper 26.1.2 · Java 25+</li>
+            <li>Paper 26.2 · Java 25+</li>
+            <li>Paper 26.3 · Java 25+</li>
+          </ul>
+          <p class="note">Binding <code>host</code> to anything other than <code>127.0.0.1</code> lets anyone who can reach the port run console commands.</p>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <a class="footer-stg-link" href="https://linktr.ee/stgseries" target="_blank" rel="noopener noreferrer" aria-label="STG SERIES on Linktree">
+          <img class="footer-stg-logo" src="assets/img/stg-series.png" width="88" height="88" alt="">
+        </a>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>LogsSTG</h4>
+            <ul>
+              <li><a href="https://www.curseforge.com/minecraft/bukkit-plugins/logsstg" target="_blank" rel="noopener noreferrer">CurseForge</a></li>
+              <li><a href="https://github.com/STG-SERIES/LogsSTG" target="_blank" rel="noopener noreferrer">Source (GitHub)</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>STG SERIES</h4>
+            <ul>
+              <li><a href="https://linktr.ee/stgseries" target="_blank" rel="noopener noreferrer">Linktree</a></li>
+              <li><a href="https://github.com/STG-SERIES" target="_blank" rel="noopener noreferrer">GitHub org</a></li>
+              <li><a href="mailto:info.stgseries@gmail.com">info.stgseries@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Site</h4>
+            <ul>
+              <li><a href="features/">Features</a></li>
+              <li><a href="install/">Install</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>LogsSTG — MIT License</span>
+        <span>Not affiliated with Mojang or Microsoft.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LogsSTG features — live console web UI, command input, config, and colors on Paper.">
+  <title>Features — LogsSTG</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <div class="page">
+    <header class="site-header">
+      <div class="header-row">
+        <a class="brand" href="../">
+          <img class="brand-logo" src="../assets/img/logsstg-logo.png" width="200" height="53" alt="LogsSTG">
+          <span class="brand-tag">STG SERIES · Paper</span>
+        </a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="../">Home</a>
+          <a href="./" aria-current="page">Features</a>
+          <a href="../install/">Install</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="shell">
+      <main class="shell-inner">
+        <section class="hero" style="padding-bottom: 0;">
+          <h1>Features</h1>
+          <p class="hero-lead">A tiny embedded web server inside the plugin — tune bind address, port, and colors in <code>plugins/LogsSTG/config.yml</code>.</p>
+        </section>
+
+        <section class="section" style="margin-top: 1.5rem; padding-top: 0; border-top: none;">
+          <div class="grid-2">
+            <article class="card">
+              <h3>Live log stream</h3>
+              <p>Watch <code>INFO</code>, <code>WARN</code>, and <code>ERROR</code> lines as they happen. Late joiners receive a configurable history buffer.</p>
+            </article>
+            <article class="card">
+              <h3>Command line</h3>
+              <p>Run console commands from the page. Slash prefix is optional. Command history with up/down arrows.</p>
+            </article>
+            <article class="card">
+              <h3>Startup message</h3>
+              <p>The plugin logs the exact URL on boot, e.g. <code>Live logs at http://127.0.0.1:8765/</code>.</p>
+            </article>
+            <article class="card">
+              <h3>Configurable bind</h3>
+              <p><code>host</code> and <code>port</code> in config. Default loopback-only for safety.</p>
+            </article>
+            <article class="card">
+              <h3>Theme colors</h3>
+              <p>Set page background and text colors per level in config — <code>#RGB</code> or <code>#RRGGBB</code>.</p>
+            </article>
+            <article class="card">
+              <h3>Hot reload</h3>
+              <p><code>/logsstg restart</code> reloads the web UI without restarting the server (OP / <code>logsstg.restart</code>).</p>
+            </article>
+            <article class="card">
+              <h3>History buffer</h3>
+              <p><code>history</code> controls how many past lines new viewers receive (50–5000).</p>
+            </article>
+            <article class="card">
+              <h3>Multi-version builds</h3>
+              <p>Separate jars for Paper 1.21.11, 26.1, 26.1.2, 26.2, and 26.3 — pick the one that matches your server.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Security note</h2>
+          <p class="note">Anyone who can open the bound address and port can execute console commands. Keep <code>host: 127.0.0.1</code> unless you fully trust your network.</p>
+          <div class="cta-row" style="margin-top: 1.25rem;">
+            <a class="btn" href="../install/">Install guide</a>
+            <a class="btn btn-curseforge" href="https://www.curseforge.com/minecraft/bukkit-plugins/logsstg" target="_blank" rel="noopener noreferrer">Get on CurseForge</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <a class="footer-stg-link" href="https://linktr.ee/stgseries" target="_blank" rel="noopener noreferrer" aria-label="STG SERIES on Linktree">
+          <img class="footer-stg-logo" src="../assets/img/stg-series.png" width="88" height="88" alt="">
+        </a>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>LogsSTG</h4>
+            <ul>
+              <li><a href="https://www.curseforge.com/minecraft/bukkit-plugins/logsstg" target="_blank" rel="noopener noreferrer">CurseForge</a></li>
+              <li><a href="https://github.com/STG-SERIES/LogsSTG" target="_blank" rel="noopener noreferrer">Source (GitHub)</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>STG SERIES</h4>
+            <ul>
+              <li><a href="https://linktr.ee/stgseries" target="_blank" rel="noopener noreferrer">Linktree</a></li>
+              <li><a href="https://github.com/STG-SERIES" target="_blank" rel="noopener noreferrer">GitHub org</a></li>
+              <li><a href="mailto:info.stgseries@gmail.com">info.stgseries@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Site</h4>
+            <ul>
+              <li><a href="./">Features</a></li>
+              <li><a href="../install/">Install</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>LogsSTG — MIT License</span>
+        <span>Not affiliated with Mojang or Microsoft.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Install LogsSTG on Paper — download, setup, and open the live console page.">
+  <title>Install — LogsSTG</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <div class="page">
+    <header class="site-header">
+      <div class="header-row">
+        <a class="brand" href="../">
+          <img class="brand-logo" src="../assets/img/logsstg-logo.png" width="200" height="53" alt="LogsSTG">
+          <span class="brand-tag">STG SERIES · Paper</span>
+        </a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="../">Home</a>
+          <a href="../features/">Features</a>
+          <a href="./" aria-current="page">Install</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="shell">
+      <main class="shell-inner">
+        <section class="hero" style="padding-bottom: 0;">
+          <h1>Install</h1>
+          <p class="hero-lead">Drop the jar in <code>plugins/</code>, restart, then open the URL printed in the console (default port <strong>8765</strong>).</p>
+          <div class="cta-row">
+            <a class="btn btn-curseforge" href="https://www.curseforge.com/minecraft/bukkit-plugins/logsstg" rel="noopener noreferrer" target="_blank">Download — CurseForge</a>
+            <a class="btn btn-github" href="https://github.com/STG-SERIES/LogsSTG" rel="noopener noreferrer" target="_blank">Source — GitHub</a>
+          </div>
+        </section>
+
+        <section class="section" style="margin-top: 1.5rem;">
+          <h2>Requirements</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Server</th>
+                  <th>Java</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Paper <strong>1.21.11</strong></td>
+                  <td>21+</td>
+                  <td>Release jar for 1.21.11 line</td>
+                </tr>
+                <tr>
+                  <td>Paper <strong>26.1</strong></td>
+                  <td>25+</td>
+                  <td>Targets 26.1.1 API line</td>
+                </tr>
+                <tr>
+                  <td>Paper <strong>26.1.2</strong></td>
+                  <td>25+</td>
+                  <td>Dedicated 26.1.2 build</td>
+                </tr>
+                <tr>
+                  <td>Paper <strong>26.2</strong></td>
+                  <td>25+</td>
+                  <td>Dedicated 26.2 build</td>
+                </tr>
+                <tr>
+                  <td>Paper <strong>26.3</strong></td>
+                  <td>25+</td>
+                  <td>Dedicated 26.3 build</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Setup in three steps</h2>
+          <ol class="steps">
+            <li>
+              <strong>Download</strong> the LogsSTG jar for your Paper version from CurseForge or GitHub Releases.
+            </li>
+            <li>
+              <strong>Install</strong> into <code>plugins/</code> and restart the server.
+            </li>
+            <li>
+              <strong>Open</strong> <code>http://127.0.0.1:8765/</code> (or the host/port in <code>config.yml</code>). Edit config, then <code>/logsstg restart</code> if needed.
+            </li>
+          </ol>
+        </section>
+
+        <section class="section">
+          <h2>First run creates</h2>
+          <ul class="pill-list">
+            <li>plugins/LogsSTG/config.yml</li>
+            <li>host · port · history</li>
+            <li>colors.background · colors.text</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>Need help?</h2>
+          <p>GitHub issues or STG SERIES via Linktree / email.</p>
+          <div class="cta-row">
+            <a class="btn" href="https://github.com/STG-SERIES/LogsSTG/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>
+            <a class="btn" href="mailto:info.stgseries@gmail.com">Email STG SERIES</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <a class="footer-stg-link" href="https://linktr.ee/stgseries" target="_blank" rel="noopener noreferrer" aria-label="STG SERIES on Linktree">
+          <img class="footer-stg-logo" src="../assets/img/stg-series.png" width="88" height="88" alt="">
+        </a>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>LogsSTG</h4>
+            <ul>
+              <li><a href="https://www.curseforge.com/minecraft/bukkit-plugins/logsstg" target="_blank" rel="noopener noreferrer">CurseForge</a></li>
+              <li><a href="https://github.com/STG-SERIES/LogsSTG" target="_blank" rel="noopener noreferrer">Source (GitHub)</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>STG SERIES</h4>
+            <ul>
+              <li><a href="https://linktr.ee/stgseries" target="_blank" rel="noopener noreferrer">Linktree</a></li>
+              <li><a href="https://github.com/STG-SERIES" target="_blank" rel="noopener noreferrer">GitHub org</a></li>
+              <li><a href="mailto:info.stgseries@gmail.com">info.stgseries@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Site</h4>
+            <ul>
+              <li><a href="../features/">Features</a></li>
+              <li><a href="./">Install</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>LogsSTG — MIT License</span>
+        <span>Not affiliated with Mojang or Microsoft.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
