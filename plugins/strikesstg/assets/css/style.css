@@ -130,9 +130,8 @@ img {
 }
 
 .brand-logo {
-  height: clamp(40px, 5.2vw, 50px);
-  width: auto;
-  max-width: min(240px, 62vw);
+  width: clamp(108px, 20vw, 148px);
+  height: auto;
   filter: none;
 }
 
