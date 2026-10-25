@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Install CatFightSTG on Paper 1.21.11 — download, setup, and first-run config.">
+  <title>Install — CatFightSTG</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <div class="page">
+    <header class="site-header">
+      <div class="header-row">
+        <a class="brand" href="../">
+          <img class="brand-logo" src="../assets/img/catfightstg-logo.png" width="200" height="53" alt="CatFightSTG">
+          <span class="brand-tag">STG SERIES · Paper</span>
+        </a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="../">Home</a>
+          <a href="../features/">Features</a>
+          <a href="./" aria-current="page">Install</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="shell">
+      <main class="shell-inner">
+        <section class="hero" style="padding-bottom: 0;">
+          <h1>Install</h1>
+          <p class="hero-lead">Paper <strong>1.21.11</strong>, Java 21+, and the Paper plugin jar — not the Fabric/Forge mod.</p>
+          <div class="cta-row">
+            <a class="btn btn-curseforge" href="https://www.curseforge.com/minecraft/bukkit-plugins/catfightstg" rel="noopener noreferrer" target="_blank">Download — CurseForge</a>
+            <a class="btn btn-github" href="https://github.com/STG-SERIES/CatFightingSTG" rel="noopener noreferrer" target="_blank">Source — GitHub</a>
+          </div>
+        </section>
+
+        <section class="section" style="margin-top: 1.5rem;">
+          <h2>Requirements</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Server</th>
+                  <th>Java</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Paper 1.21.11</strong></td>
+                  <td>21+</td>
+                  <td>Uses Paper mob goal API — Spigot not supported</td>
+                </tr>
+                <tr>
+                  <td>Clients</td>
+                  <td>—</td>
+                  <td>Vanilla clients OK — no Fabric/Forge/NeoForge on players</td>
+                </tr>
+                <tr>
+                  <td>Folia</td>
+                  <td>—</td>
+                  <td>Not supported</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Setup in four steps</h2>
+          <ol class="steps">
+            <li>
+              <strong>Download</strong> the Paper plugin from CurseForge or GitHub Releases (e.g. <code>catfighting-paper-1.21.11-*.jar</code>).
+            </li>
+            <li>
+              <strong>Clean up</strong> — remove any <code>catfighting-fabric-*.jar</code>, NeoForge, or Forge jars from <code>plugins/</code> and <code>plugins/.paper-remapped</code>.
+            </li>
+            <li>
+              <strong>Install</strong> the Paper jar in <code>plugins/</code> and restart the server.
+            </li>
+            <li>
+              <strong>Configure</strong> optional settings in <code>plugins/CatFighting/config.yml</code>, then <code>/catfighting reload</code>.
+            </li>
+          </ol>
+        </section>
+
+        <section class="section">
+          <h2>Need help?</h2>
+          <p>Issues on GitHub or contact STG SERIES via Linktree or email.</p>
+          <div class="cta-row">
+            <a class="btn" href="https://github.com/STG-SERIES/CatFightingSTG/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>
+            <a class="btn" href="mailto:info.stgseries@gmail.com">Email STG SERIES</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <a class="footer-stg-link" href="https://linktr.ee/stgseries" target="_blank" rel="noopener noreferrer" aria-label="STG SERIES on Linktree">
+          <img class="footer-stg-logo" src="../assets/img/stg-series.png" width="88" height="88" alt="">
+        </a>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>CatFightSTG</h4>
+            <ul>
+              <li><a href="https://www.curseforge.com/minecraft/bukkit-plugins/catfightstg" target="_blank" rel="noopener noreferrer">CurseForge</a></li>
+              <li><a href="https://github.com/STG-SERIES/CatFightingSTG" target="_blank" rel="noopener noreferrer">Source (GitHub)</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>STG SERIES</h4>
+            <ul>
+              <li><a href="https://linktr.ee/stgseries" target="_blank" rel="noopener noreferrer">Linktree</a></li>
+              <li><a href="https://github.com/STG-SERIES" target="_blank" rel="noopener noreferrer">GitHub org</a></li>
+              <li><a href="mailto:info.stgseries@gmail.com">info.stgseries@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Site</h4>
+            <ul>
+              <li><a href="../features/">Features</a></li>
+              <li><a href="./">Install</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>CatFightSTG — MIT License · Paper port by STG SERIES</span>
+        <span>Original mod by Chesy · Not affiliated with Mojang.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
