@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="EcoSTG features — economy, jobs, homes, hub menu, combat, friends, and more for Paper and Purpur.">
-  <title>Features — EcoSTG</title>
+  <meta name="description" content="CatFightSTG features — cat quarrels, flattening, commands, and config on Paper 1.21.11.">
+  <title>Features — CatFightSTG</title>
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -14,8 +14,8 @@
     <header class="site-header">
       <div class="header-row">
         <a class="brand" href="../">
-          <img class="brand-logo" src="../assets/img/ecostg-logo.png" width="200" height="53" alt="EcoSTG">
-          <span class="brand-tag">STG SERIES · Paper / Purpur</span>
+          <img class="brand-logo" src="../assets/img/catfightstg-logo.png" width="200" height="53" alt="CatFightSTG">
+          <span class="brand-tag">STG SERIES · Paper</span>
         </a>
         <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
         <nav id="site-nav" class="site-nav" aria-label="Primary">
@@ -30,52 +30,58 @@
       <main class="shell-inner">
         <section class="hero" style="padding-bottom: 0;">
           <h1>Features</h1>
-          <p class="hero-lead">Everything below ships in the main plugin. Toggle pieces in <code>config.yml</code> without ripping out the rest.</p>
+          <p class="hero-lead">Everything runs server-side — tune fights and flattening in <code>plugins/CatFighting/config.yml</code>.</p>
         </section>
 
         <section class="section" style="margin-top: 1.5rem; padding-top: 0; border-top: none;">
           <div class="grid-2">
             <article class="card">
-              <h3>Economy &amp; trading</h3>
-              <p>Starting balance, currency naming, <code>/pay</code>, balance commands, money top, OP tools, and per-player economy toggles. Auction house with search; instant sell via <code>/sell</code> using <code>worth.yml</code> (shulkers count contents).</p>
+              <h3>Automatic quarrels</h3>
+              <p>Cats scan on an interval, roll a start chance, and brawl when another eligible cat is in range. Sitting cats can be excluded.</p>
             </article>
             <article class="card">
-              <h3>Jobs</h3>
-              <p>One job per player. Deliver items on a schedule, list worker-tagged AH listings with discounts, and track deadlines in <code>/jobinfo</code>. Miss a deadline and face a real-day cooldown.</p>
+              <h3>Visual combat</h3>
+              <p>Hisses, hurt sounds, angry particles, and swipes. They close in face-to-face with configurable speed, duration, and cooldown.</p>
             </article>
             <article class="card">
-              <h3>Homes</h3>
-              <p>Named homes with dialog menus — teleport, rename, delete, and pick preset or custom HEX colors. Defaults are configurable; operators are not capped by the home limit.</p>
+              <h3>No fight damage</h3>
+              <p>Cat-vs-cat fights never apply real damage — pure spectacle for survival worlds.</p>
             </article>
             <article class="card">
-              <h3>ESC / hub menu</h3>
-              <p>Pause-screen button (custom label) and <code>/menu</code> share one hub: homes, auction, sell, TPA, leaderboards, RTP, friends, pay, stats, ender chest, optional GSit sit/lay, OP gamemode, settings last.</p>
+              <h3>Who can fight</h3>
+              <p>Toggle tamed cats, same-owner pairs, and kittens independently in config.</p>
             </article>
             <article class="card">
-              <h3>Social &amp; travel</h3>
-              <p>Follow-based friends (mutual follow = friends), TPA / TPAHere with privacy rules, random teleport near you inside the world border, and leaderboards for money, playtime, kills, blocks, and more.</p>
+              <h3>Flatten cats</h3>
+              <p>Hit with a shovel or roll over them with a fast minecart. Flattened cats persist across chunk unloads.</p>
             </article>
             <article class="card">
-              <h3>Combat tag</h3>
-              <p>Player vs player hits start a visible timer. While active, home, TPA, and RTP are blocked. Operators are never tagged; PvP against an OP only tags the non-OP.</p>
+              <h3>Vanilla-friendly flatten</h3>
+              <p>Uses the <code>SCALE</code> attribute and lie-down pose — not paper-thin Y-scale mods require.</p>
             </article>
             <article class="card">
-              <h3>Settings &amp; privacy</h3>
-              <p>In-hub settings for chat filters, notifications, bio, and visuals — including optional money display under the player in-world (not in tab or chat).</p>
+              <h3>Unflatten options</h3>
+              <p>Shovel toggle, sneak + empty-hand right-click, or <code>/catfighting unflatten</code> on the cat you are looking at.</p>
             </article>
             <article class="card">
-              <h3>Server-friendly</h3>
-              <p>SQLite storage, structured console logging for important actions, feature flags in config, and builds aligned to each supported Paper line.</p>
+              <h3>Admin commands</h3>
+              <p><code>/catfighting reload</code>, <code>flatten</code>, <code>unflatten</code> — aliases <code>/catfight</code>, <code>/cf</code>. Permission: <code>catfighting.admin</code> (OP).</p>
             </article>
           </div>
         </section>
 
         <section class="section">
-          <h2>Every hub button has a command</h2>
-          <p>Players are never locked into dialogs. Auction, sell, homes, friends, RTP, pay, stats, settings, and the rest all work from chat.</p>
+          <h2>Config highlights</h2>
+          <ul class="pill-list">
+            <li><code>enabled</code> — master fight toggle</li>
+            <li><code>search-range</code> · <code>start-chance</code></li>
+            <li><code>duration-ticks</code> · <code>cooldown-ticks</code></li>
+            <li><code>flatten.shovel</code> · <code>flatten.minecart</code></li>
+            <li><code>flatten.scale</code> — flattened size</li>
+          </ul>
           <div class="cta-row" style="margin-top: 1.25rem;">
             <a class="btn" href="../install/">Install guide</a>
-            <a class="btn btn-modrinth" href="https://modrinth.com/plugin/ecostg" target="_blank" rel="noopener noreferrer">Get on Modrinth</a>
+            <a class="btn btn-curseforge" href="https://www.curseforge.com/minecraft/bukkit-plugins/catfightstg" target="_blank" rel="noopener noreferrer">Get on CurseForge</a>
           </div>
         </section>
       </main>
@@ -88,11 +94,10 @@
         </a>
         <div class="footer-links">
           <div class="footer-col">
-            <h4>EcoSTG</h4>
+            <h4>CatFightSTG</h4>
             <ul>
-              <li><a href="https://modrinth.com/plugin/ecostg" target="_blank" rel="noopener noreferrer">Modrinth</a></li>
-              <li><a href="https://www.curseforge.com/minecraft/bukkit-plugins/ecostg" target="_blank" rel="noopener noreferrer">CurseForge</a></li>
-              <li><a href="https://github.com/stg-series/ecostg" target="_blank" rel="noopener noreferrer">Source (GitHub)</a></li>
+              <li><a href="https://www.curseforge.com/minecraft/bukkit-plugins/catfightstg" target="_blank" rel="noopener noreferrer">CurseForge</a></li>
+              <li><a href="https://github.com/STG-SERIES/CatFightingSTG" target="_blank" rel="noopener noreferrer">Source (GitHub)</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -113,8 +118,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>EcoSTG — MIT License</span>
-        <span>Not affiliated with Mojang or Microsoft.</span>
+        <span>CatFightSTG — MIT License · Paper port by STG SERIES</span>
+        <span>Original mod by Chesy · Not affiliated with Mojang.</span>
       </div>
     </footer>
   </div>
