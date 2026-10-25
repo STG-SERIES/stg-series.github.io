@@ -133,6 +133,8 @@ img {
   width: clamp(108px, 20vw, 148px);
   height: auto;
   filter: none;
+  transform: scale(1.18);
+  transform-origin: left center;
 }
 
 .brand-tag {
