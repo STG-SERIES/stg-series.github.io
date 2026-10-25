@@ -120,6 +120,12 @@ img {
   min-height: 0;
 }
 
+/* Taller bar to match EcoSTG (Strikes wordmark is shorter in aspect ratio) */
+.site-header .header-row {
+  min-height: 3.35rem;
+  padding-block: 0.52rem;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -131,7 +137,9 @@ img {
 
 .brand-logo {
   width: clamp(108px, 20vw, 148px);
-  height: auto;
+  height: clamp(34px, 4.8vw, 44px);
+  object-fit: contain;
+  object-position: left center;
   filter: none;
 }
 
