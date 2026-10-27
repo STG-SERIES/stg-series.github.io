@@ -1,0 +1,78 @@
+@import url("../../ecostg/assets/css/style.css");
+
+.site-bg {
+  background: var(--ink) url("../img/bg.jpg") center / cover no-repeat;
+}
+
+.brand-logo {
+  width: clamp(128px, 24vw, 180px);
+}
+
+.plugin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.25rem;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.plugin-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.1rem 0.85rem;
+  text-decoration: none;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.62);
+  border: var(--border);
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform 0.05s ease, box-shadow 0.05s ease;
+}
+
+.plugin-card:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0 var(--ink);
+  color: var(--ink);
+}
+
+.plugin-card:focus-visible {
+  outline: 3px solid var(--sky);
+  outline-offset: 3px;
+}
+
+.plugin-card img {
+  width: min(120px, 28vw);
+  height: min(120px, 28vw);
+  border-radius: 50%;
+  border: var(--border);
+  box-shadow: 3px 3px 0 var(--ink);
+  object-fit: cover;
+}
+
+.plugin-card span {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.plugin-grid .plugin-card:nth-child(1) {
+  border-color: var(--accent);
+  box-shadow: 4px 4px 0 var(--accent);
+}
+
+.plugin-grid .plugin-card:nth-child(2) {
+  border-color: var(--clay);
+  box-shadow: 4px 4px 0 var(--clay);
+}
+
+.plugin-grid .plugin-card:nth-child(3) {
+  border-color: var(--wheat);
+  box-shadow: 4px 4px 0 var(--wheat);
+}
+
+.plugin-grid .plugin-card:nth-child(4) {
+  border-color: var(--sky);
+  box-shadow: 4px 4px 0 var(--sky);
+}
